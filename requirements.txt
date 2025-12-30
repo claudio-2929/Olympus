@@ -9,3 +9,5 @@ pandas
 matplotlib
 alpaca-py
 numpy<2
+urllib3<2
+yfinance<0.2.50
