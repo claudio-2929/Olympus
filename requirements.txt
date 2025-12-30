@@ -1,0 +1,9 @@
+langgraph
+langchain
+langchain-openai
+langchain-community
+yfinance
+tavily-python
+python-dotenv
+pandas
+matplotlib
