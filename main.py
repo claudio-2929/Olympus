@@ -44,15 +44,13 @@ def main():
             #     print(value["analyst_reports"])
     
     print("\n--- Final Decision ---\n")
-    # Get the final state (doing it via invoke for clean final return if stream is just steps)
-    # Or just capture the last output.
-    # Let's just re-invoke (expensive) or just trust the stream output?
-    # Stream returns the update.
-    # Let's invoke once for the final result if stream debugging is not priority vs clean output.
     
     result = app.invoke(initial_state)
     decision = result.get("final_decision")
+    execution = result.get("execution_result")
+    
     print(decision)
+    print(f"\n--- Execution Result ---\n{execution}")
 
 if __name__ == "__main__":
     main()

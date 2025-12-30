@@ -8,3 +8,4 @@ class AgentState(TypedDict):
     analyst_reports: Dict[str, str]
     risk_report: str
     final_decision: str
+    execution_result: str
