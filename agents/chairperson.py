@@ -15,16 +15,16 @@ You must adhere to the Prime Directive above. If the directive says "No Crypto" 
 Construct a coherent argument based on the evidence provided.
 
 You must output a JSON object with the following structure:
-{
+{{
     "ticker": "SYMBOL",
     "signal": "BUY" | "SELL" | "HOLD",
     "confidence": float (0-100),
     "reasoning": "Detailed summary of why...",
-    "order_plan": {
+    "order_plan": {{
         "action": "market_buy" | "market_sell" | "none",
         "quantity_risk": "conservative" | "aggressive"
-    }
-}
+    }}
+}}
 Output ONLY the JSON.
 """
 
